@@ -200,7 +200,7 @@ return [
 
         //Infoamin Installer
         // Infoamin\\Installer\LaravelInstallerServiceProvider::class,
-        Infoamin\Installer\LaravelInstallerServiceProvider::class,
+        
     ],
 
     /*
