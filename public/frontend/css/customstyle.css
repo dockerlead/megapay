@@ -96,15 +96,16 @@ table tr td:first-child {
 #quick-contact li {
     clear: inherit;
     float: left;
-    font-size: 12px;
+    font-size: 15px;
     list-style: outside none none;
     text-align: left;
     font-weight: 200;
-    border-right: 1px solid rgba(255, 255, 255, 0.15);
+/*     border-right: 1px solid rgba(255, 255, 255, 0.15); */
+    border: 1px solid rgba(255, 255, 255, 255);
     margin-right: 15px;
-    padding: 5px 17px 5px 17px;
+    padding: 10px 20px 10px 20px;
     color: #fff;
-    background: #0b2753;
+/*     background: #0b2753; */
     border-radius: 28px;
 }
 
@@ -114,9 +115,9 @@ table tr td:first-child {
 /*-----------------header-----------------*/
 
 header {
-    z-index: 5;
+    z-index: 9999;
     width: 100%;
-    /*position: fixed;*/
+    position: relative;
 }
 
 .sticky {
@@ -192,6 +193,8 @@ canvas {
     background-size: cover !important;
     background: url("../images/login-page.jpg") top center;
     height: 150px;
+    z-index:10;
+    margin-top:-60px;
 }
 
 .inner-banner h1 {
@@ -203,12 +206,12 @@ canvas {
     letter-spacing: 1.5px;
     position: relative;
     display: block;
-    top: 50px;
-    text-align: left;
+    top: 65px;
+    text-align: center;
 }
 
 .overlay-text {
-    background: rgba(18, 55, 130, 0.8) left;
+/*     background: rgba(18, 55, 130, 0.8) left; */
     display: block;
     height: 20%;
     background-size: cover !important;
@@ -219,7 +222,7 @@ canvas {
 }
 
 .overlay-banner {
-    background: rgba(18, 55, 130, 0.6) left;
+/*     background: rgba(18, 55, 130, 0.6) left; */
     display: block;
     height: 100%;
     background-size: cover !important;
@@ -230,8 +233,10 @@ canvas {
 .welcome-area.image-bg {
     position: relative;
     background-size: cover !important;
-    background: url("../images/slider_image.jpg") top center;
-    height: 595px;
+    background: url("../images/slider_image1.jpg") top center;
+    height: 100vh;
+    margin-top: -60px;
+    z-index:10;
 }
 
 .welcome-text {
@@ -242,7 +247,7 @@ canvas {
 }
 
 .welcome-img {
-    margin-top: 180px;
+    margin-top: 250px;
 }
 
 .welcome-img img {
@@ -402,8 +407,10 @@ canvas {
 .welcome-area.request-bg {
     position: relative;
     background-size: cover !important;
-    background: url("../../../public/frontend/banner/4444.png") top center;
-    height: 595px;
+    background: url("../../../public/frontend/banner/4445.png") top center;
+    height: 100vh;
+    margin-top: -60px;
+    z-index:1;
 }
 
 .overlay-banner-request {
@@ -629,8 +636,10 @@ canvas {
 .welcome-area.send-money-bg {
     position: relative;
     background-size: cover !important;
-    background: url("../../../public/frontend/banner/corporate-travel.jpg") top center;
-    height: 595px;
+    background: url("../../../public/frontend/banner/corporate-travel1.jpg") top center;
+    height: 100vh;
+    margin-top:-60px;
+    z-index:1;
 }
 
 .overlay-banner-send {
@@ -650,6 +659,7 @@ canvas {
 }
 
 .send-money .welcome-text h1 {
+    text-align:center;
     font-size: 38px;
     color: #fff;
     font-weight: 400;
@@ -856,6 +866,7 @@ canvas {
     color: #000000;
     background-color: #5accb5;
     border-color: #5accb5 #5accb5 #5accb5;
+
 }
 
 .nav-tabs {

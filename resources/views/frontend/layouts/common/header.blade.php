@@ -1,4 +1,3 @@
-
 <?php
 $user = Auth::user();
 $socialList = getSocialLink();
@@ -7,7 +6,7 @@ $menusHeader = getMenuContent('Header');
 $logo = getCompanyLogoWithoutSession(); //direct query
 ?>
 <header id="js-header-old">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0) 100%);background-color:transparent " >
         <div class="container">
             @if($logo)
                 <a style="height: 45px;width: 157px;overflow: hidden;"  class="navbar-brand" href="@if (request()->path() != 'merchant/payment') {{ url('/') }} @else {{ '#' }} @endif">
@@ -25,9 +24,9 @@ $logo = getCompanyLogoWithoutSession(); //direct query
                 </button>
                 <div class="collapse navbar-collapse navbar-toggler-right" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto my-navbar">
-                        <li class="nav-item <?= isset( $menu ) && ( $menu == 'home' ) ? 'nav_active': '' ?>"><a href="{{url('/')}}" class="nav-link">@lang('message.home.title-bar.home')</a></li>
-                        <li class="nav-item <?= isset( $menu ) && ( $menu == 'send-money' ) ? 'nav_active': '' ?>"><a href="{{url('/send-money')}}" class="nav-link">@lang('message.home.title-bar.send')</a></li>
-                        <li class="nav-item <?= isset( $menu ) && ( $menu == 'request-money' ) ? 'nav_active': '' ?>"><a href="{{url('/request-money')}}" class="nav-link">@lang('message.home.title-bar.request')</a></li>
+                        <li class="nav-item <?= isset( $menu ) && ( $menu == 'home' ) ? 'nav_active': '' ?>" style="margin-right:20px;"><a href="{{url('/')}}" class="nav-link">@lang('message.home.title-bar.home')</a></li>
+                        <li class="nav-item <?= isset( $menu ) && ( $menu == 'send-money' ) ? 'nav_active': '' ?>" style="margin-right:20px;"><a href="{{url('/send-money')}}" class="nav-link">@lang('message.home.title-bar.send')</a></li>
+                        <li class="nav-item <?= isset( $menu ) && ( $menu == 'request-money' ) ? 'nav_active': '' ?>" style="margin-right:20px;"><a href="{{url('/request-money')}}" class="nav-link">@lang('message.home.title-bar.request')</a></li>
                      @if(!empty($menusHeader))
                         @foreach($menusHeader as $top_navbar)
                             <li class="nav-item <?= isset( $menu ) && ( $menu == $top_navbar->url ) ? 'nav_active': '' ?>"><a href="{{url($top_navbar->url)}}" class="nav-link"> {{ $top_navbar->name }}</a></li>

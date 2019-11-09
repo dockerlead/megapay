@@ -7,7 +7,7 @@ $menusFooter = getMenuContent('Footer');
     <div class="contact-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-4">
+<!--                 <div class="col-md-4 col-sm-4">
                     <div class="contact-detail">
                         <h2>@lang('message.footer.follow-us')</h2>
                         <div class="social-icons">
@@ -19,7 +19,8 @@ $menusFooter = getMenuContent('Footer');
 
                         </div>
                     </div>
-                </div>
+                </div> -->
+                <div class="col-md-2 col-sm-2"></div>
                 <div class="col-md-4 col-sm-4">
                     @if (request()->path() != 'merchant/payment')
                         <div class="quick-link">
@@ -63,6 +64,8 @@ $menusFooter = getMenuContent('Footer');
                         </div>
                     </form>
                 </div>
+                <div class="col-md-2 col-sm-2"></div>
+                
             </div>
         </div>
     </div>

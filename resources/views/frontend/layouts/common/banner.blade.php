@@ -10,7 +10,7 @@
                     <div class="welcome-text">
                         <h1>@lang('message.home.banner.title',['br'=>'</br>'])</h1>
                     </div>
-                    <div class="banner-text">
+<!--                     <div class="banner-text">
                         <div class="row">
                             <div class="col-md-4">
                                     <div class="feature-icon">
@@ -32,7 +32,7 @@
                                     </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
